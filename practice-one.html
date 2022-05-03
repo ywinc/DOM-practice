@@ -1,0 +1,113 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Changing color and font-size example</title>
+
+<script>
+function changeText() {
+  var p = document.getElementById("pid");
+
+  p.style.color = "blue"
+  p.style.fontSize = "18pt"
+}
+</script>
+</head>
+<body>
+
+<p id="pid" onclick="window.location.href = 'http://www.cnn.com/';">linker</p>
+
+<form>
+  <p><input value="rec" type="button" onclick="changeText();" /></p>
+</form>
+
+</body>
+</html>
+-->
+
+
+<!-- <table id="table0">
+    <tr>
+     <td>Row 0 Cell 0</td>
+     <td>Row 0 Cell 1</td>
+    </tr>
+   </table>
+   
+   <script>
+   var table = document.getElementById('table0');
+  
+   var cell,
+       text;
+
+for(let j = 0; j < 10; j++){
+    var row = table.insertRow(-1);
+    
+    for (var i = 0; i < 10; i++) {
+        cell = row.insertCell(-1);
+        text = 'Row ' + row.rowIndex + ' Cell ' + i;
+        cell.appendChild(document.createTextNode(text));
+    }
+}
+   </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Finding HTML Elements Using document.images</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/2018_Tesla_Model_S_75D.jpg/1280px-2018_Tesla_Model_S_75D.jpg" width="486" height="266">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/IPhone_13_Pro_vector.svg/800px-IPhone_13_Pro_vector.svg.png" width="150" height="255">
+<img src="https://static.wixstatic.com/media/a3420a_1f4750710ed14cabac8f364579a7471d~mv2.png/v1/fill/w_261,h_146,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bay%20valley%20tech%20logo.png" width="486" height="255">
+
+
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"Number of images: " + document.images.length;
+//if I keep adding images above, then this script updates and returns the number of images on the page
+</script>
+
+</body>
+</html>
+
+
+<script>
+    function bgChange(bg) {
+      document.body.style.background = bg;
+    }
+    </script>
+    </head>
+    <body>
+    
+    <h2>Change background color</h2>
+    <p>Mouse over the squares!</p>
+    
+    <table style="width:300px;height:100px">
+      <tr>
+        <td onmouseover="bgChange(this.style.backgroundColor)" 
+        onmouseout="bgChange('transparent')"
+        style="background-color:salmon">
+        </td>
+        <td onmouseover="bgChange(this.style.backgroundColor)" 
+        onmouseout="bgChange('transparent')"
+        style="background-color:PaleGreen">
+        </td>
+        <td onmouseover="bgChange(this.style.backgroundColor)" 
+        onmouseout="bgChange('transparent')"
+        style="background-color:turquoise">
+        </td>
+        <td onmouseover="bgChange(this.style.backgroundColor)" 
+        onmouseout="bgChange('transparent')"
+        style="background-color:greenyellow">
+        </td>
+      </tr>
+    </table>
+    
+    </body>
+    </html>
